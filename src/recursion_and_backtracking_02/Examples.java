@@ -5,8 +5,11 @@ public class Examples {
 
         System.out.println(fibonacci(10)); // 89
         System.out.println(fibonacci(0)); // 1
-        System.out.println(fibonacci(50)); // This will hang!
 
+        System.out.println(recursiveFactorial(5));
+        System.out.println(iterativeFactorial(5));
+
+        System.out.println(fibonacci(50)); // This will hang!
     }
 
     static long fibonacci(int n) {
@@ -16,14 +19,14 @@ public class Examples {
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
-    static long recurFact(int n){
+    static long recursiveFactorial(int n){
         if (n == 0) {
             return 1;
         }
-        return n * recurFact(n - 1);
+        return n * recursiveFactorial(n - 1);
     }
 
-    static long iterFact(int num) {
+    static long iterativeFactorial(int num) {
         long result = 1;
         for (int i = 1; i <= num; i++) {
             result *= i;
