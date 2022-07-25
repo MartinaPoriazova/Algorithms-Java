@@ -1,4 +1,4 @@
-package ExerciseRecursionCombinatorialProblems_04;
+package exercise_recursionCombinatorial_problems_04;
 
 import java.io.BufferedReader;
 import java.io.IOException;
