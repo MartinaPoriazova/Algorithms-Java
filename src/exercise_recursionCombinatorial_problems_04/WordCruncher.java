@@ -9,6 +9,7 @@ public class WordCruncher {
     public static String target;
     public static Map<Integer, List<String>> table = new HashMap<>();
     public static Map<String, Integer> occurrences = new HashMap<>();
+
     public static Set<String> out = new TreeSet<>();
 
     public static void main(String[] args) {
