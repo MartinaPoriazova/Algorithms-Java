@@ -2,7 +2,7 @@ package dynamic_programming_10;
 
 import java.util.Scanner;
 
-public class Fibonacci {
+public class FibonacciRec {
     public static long[] dp;
 
     public static void main(String[] args) {
