@@ -25,6 +25,7 @@ public class ClusterBorder {
         for (int i = 2; i <= singleShipTimes.length; i++) {
             int singleShipTime = dp[i - 1] + singleShipTimes[i - 1];
             int pairShipTime = dp[i - 2] + pairShipTimes[i - 2];
+
             dp[i] = Math.min(singleShipTime, pairShipTime);
         }
 
